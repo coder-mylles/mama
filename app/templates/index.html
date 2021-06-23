@@ -1,1 +1,21 @@
-<h1>Mama Mboga app</h1>
+{%include 'bootstrap/base.html'%}
+{%extends 'navbar.html'%}
+{%block content%}
+<h2>Wecome</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/reasons_to_eat_more_oranges_slideshow/1800ss_getty_rf_oranges.jpg?resize=650px:*" alt="Oranges">
+        </div>
+    </div>
+
+    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+        <div class="card-header">Kales</div>
+        <div class="card-body">
+            <img src="https://www.fmk.co.ke/wp-content/uploads/2019/08/Kale-Farmers-Market-Kenya.jpg" alt="Kales" width="100%">
+            <p class="card-text">@200</p>
+            <button class="btn btn-primary btn-sm">ADD TO CART</button>
+        </div>
+    </div>
+</div>
+{%endblock %}

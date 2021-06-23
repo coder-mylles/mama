@@ -1,10 +1,10 @@
 from flask import Flask
-# from flask_bootstrap import Bootstrap
+from flask_bootstrap import Bootstrap
 # from flask_sqlalchemy import SQLAlchemy
 # from config import config_options
 # from flask_login import LoginManager
 # from flask_mail import Mail
-# bootstrap = Bootstrap()
+bootstrap = Bootstrap()
 # db = SQLAlchemy()
 # mail = Mail()
 # login_manager = LoginManager()
@@ -17,7 +17,7 @@ def create_app(app):
     #Create application configurations
     # app.config.from_object(config_options[config_name])
     #Initializing Flask extensions
-    # bootstrap = Bootstrap(app)
+    bootstrap = Bootstrap(app)
     # db.init_app(app)
     # mail.init_app(app)
     # login_manager.init_app(app)
