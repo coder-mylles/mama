@@ -1,6 +1,26 @@
-.table{
-    width:30%;
+.table {
+    width: 30%;
     box-shadow: 0px 0px 3px 3px solid green;
     display: flex;
     align-self: center;
+}
+
+.land {
+    column-count: 3;
+    display: block;
+}
+
+.cart {
+    float: right;
+}
+
+.card-header {
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.title{
+    text-transform: uppercase;
+    font-weight:700;
+    font-size: 30px;
 }
