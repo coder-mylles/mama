@@ -3,157 +3,342 @@
 
 <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
 
-
-<h2 class="text-center title">Wecome</h2>
+<div class="container background">
+    <h2 class="text-center title">Welcome to Grocery Place</h2>
+</div>
 {% block content %}
 
-<div class="container land">
-    <div class="background">
 
-    </div>
-   
-    <div class="card text-white bg-light mb-4" style="max-width: 20rem;">
-        <div class="card-header">Kales</div>
-        <div class="card-body">
-            <img src="https://www.fmk.co.ke/wp-content/uploads/2019/08/Kale-Farmers-Market-Kenya.jpg" alt="Kales" width="100%">
-            <p class="card-text">@200</p>
+
+
+<div class="container land kales">
+
+    <h2 class="text-center">Vegetables</h2>
+    <div class=" bg-light">
+        <div class="">Kales</div>
+        <div class="">
+            <img src="https://www.fmk.co.ke/wp-content/uploads/2019/08/Kale-Farmers-Market-Kenya.jpg" alt="Kales"
+                width="350px">
+            <select name="Quantity" id="Quantity">
+                <option value="1">1 kg</option>
+                <option value="2">2 kg</option>
+                <option value="3">3 kg</option>
+                <option value="4">4 kg</option>
+                <option value="5">5 kg</option>
+                <option value="6">6 kg</option>
+                <option value="7">7 kg</option>
+                <option value="8">8 kg</option>
+                <option value="9">9 kg</option>
+                <option value="10">10 kg</option>
+            </select>
+            <p class="">@200/kg</p>
+
             <button class="btn btn-primary btn-sm cart">ADD TO CART</button>
         </div>
-    </div><hr><br><br>
+    </div>
+    <hr><br><br>
 
-    <div class="card text-white bg-light mb-4" style="max-width: 20rem;">
-        <div class="card-header">Oranges</div>
-        <div class="card-body">
-            <img src="https://cdn.britannica.com/24/174524-050-A851D3F2/Oranges.jpg" alt="Oranges"
-                width="100%">
-            <p class="card-text">@500</p>
-            <button class="btn btn-primary btn-sm">ADD TO CART</button>
-        </div>
-    </div><hr><br><br>
-
-    <div class="card text-white bg-light mb-4" style="max-width:20rem;">
-        <div class="card-header">Mangoes</div>
-        <div class="card-body">
-            <img src="https://gigi-gelato.com/wp-content/uploads/2020/05/mango-is-gezond.jpg" alt="Mangoes"
-                width="100%">
-            <p class="card-text">@700</p>
-            <button class="btn btn-primary btn-sm">ADD TO CART</button>
-        </div>
-    </div><hr><br><br>
-
-    <div class="card text-white bg-light mb-4" style="max-width: 20rem;">
-        <div class="card-header">Spinach</div>
-        <div class="card-body">
+    <div class=" bg-light">
+        <div class="">Spinach</div>
+        <div class="">
             <img src="https://www.respectfood.com/wp-content/uploads/sites/2/2020/02/Spinach1.png" alt="Spinach"
-                width="100%">
-            <p class="card-text">@300</p>
-            <button class="btn btn-primary btn-sm">ADD TO CART</button>
+                width="350px">
+            <select name="Quantity" id="Quantity">
+                <option value="1">1 kg</option>
+                <option value="2">2 kg</option>
+                <option value="3">3 kg</option>
+                <option value="4">4 kg</option>
+                <option value="5">5 kg</option>
+                <option value="6">6 kg</option>
+                <option value="7">7 kg</option>
+                <option value="8">8 kg</option>
+                <option value="9">9 kg</option>
+                <option value="10">10 kg</option>
+            </select>
+            <p class="">@300/kg</p>
+            <button class="btn btn-primary btn-sm cart">ADD TO CART</button>
         </div>
-    </div><hr><br><br>
+    </div>
+    <hr><br><br>
 
-    <div class="card text-white bg-light mb-4" style="max-width: 20rem;">
-        <div class="card-header">Carrots</div>
-        <div class="card-body">
-            <img src="https://www.firstforwomen.com/wp-content/uploads/sites/2/2021/06/Whole-carrots.jpg" alt="Carrots"
-                width="100%">
-            <p class="card-text">@200</p>
-            <button class="btn btn-primary btn-sm">ADD TO CART</button>
-        </div>
-    </div><hr><br><br>
-
-    <div class="card text-white bg-light mb-4" style="max-width: 20rem;">
-        <div class="card-header">Dania</div>
-        <div class="card-body">
+    <div class=" bg-light">
+        <div class="">Dania</div>
+        <div class="">
             <img src="https://sokoshipafrica.com/wp-content/uploads/2020/11/coriander-hybrid-grade-a.jpg" alt="Dania"
-                width="100%">
-            <p class="card-text">@200</p>
-            <button class="btn btn-primary btn-sm">ADD TO CART</button>
-        </div>
-    </div><hr><br><br>
-
-    <div class="card text-white bg-light mb-4" style="max-width: 20rem;">
-        <div class="card-header">Ovacado</div>
-        <div class="card-body">
-            <img src="https://i.insider.com/60b93af389dbc300189b291f?width=700" alt="Ovacado"
-                width="100%">
-            <p class="card-text">@200</p>
-            <button class="btn btn-primary btn-sm">ADD TO CART</button>
-        </div>
-    </div><hr><br><br>
-
-    <div class="card text-white bg-light mb-4" style="max-width: 20rem;">
-        <div class="card-header">Eggs</div>
-        <div class="card-body">
-            <img src="https://www.nationalswa.com/wp-content/uploads/2019/08/Eggs-e1567737068980-799x533.jpg" alt="Eggs"
-                width="100%">
-            <p class="card-text">@200</p>
-            <button class="btn btn-primary btn-sm">ADD TO CART</button>
-        </div>
-    </div><hr><br><br>
-
-    <div class="card text-white bg-light mb-4" style="max-width: 20rem;">
-        <div class="card-header">Cooking oil</div>
-        <div class="card-body">
-            <img src="https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/22/300721/1.jpg?8165" alt="Cooking oil" width="100%">
-            <p class="card-text">@200</p>
-            <button class="btn btn-primary btn-sm">ADD TO CART</button>
-        </div>
-    </div><hr><br><br>
-
-    <div class="card text-white bg-light mb-4" style="max-width: 20rem;">
-        <div class="card-header">Banana</div>
-        <div class="card-body">
-            <img src="https://images.everydayhealth.com/images/diet-nutrition/all-about-bananas-nutrition-facts-health-benefits-recipes-and-more-rm-722x406.jpg"
-                alt="Banana" width="100%">
-            <p class="card-text">@200</p>
-            <button class="btn btn-primary btn-sm">ADD TO CART</button>
+                width="350px">
+            <select name="Quantity" id="Quantity">
+                <option value="1">1 kg</option>
+                <option value="2">2 kg</option>
+                <option value="3">3 kg</option>
+                <option value="4">4 kg</option>
+                <option value="5">5 kg</option>
+                <option value="6">6 kg</option>
+                <option value="7">7 kg</option>
+                <option value="8">8 kg</option>
+                <option value="9">9 kg</option>
+                <option value="10">10 kg</option>
+            </select>
+            <p class="">@400/kg</p>
+            <button class="btn btn-primary btn-sm cart">ADD TO CART</button>
         </div>
     </div>
     <hr><br><br>
 
-    <div class="card text-white bg-light mb-4" style="max-width: 20rem;">
-        <div class="card-header">Sweet potatoes</div>
-        <div class="card-body">
-            <img src="https://www.almanac.com/sites/default/files/image_nodes/sweet-potatoes_ssbonnietaylorbarry.jpg"
-                alt="Sweet potatoes" width="100%">
-            <p class="card-text">@200</p>
-            <button class="btn btn-primary btn-sm">ADD TO CART</button>
-        </div>
-    </div>
-    <hr><br><br>
-
-    <div class="card text-white bg-light mb-4" style="max-width: 20rem;">
-        <div class="card-header">Peanuts</div>
-        <div class="card-body">
-            <img src="http://upl.stack.com/wp-content/uploads/2020/01/14122708/Peanuts-4-STACK-654x368.jpg"
-                alt="Peanuts" width="100%">
-            <p class="card-text">@200</p>
-            <button class="btn btn-primary btn-sm">ADD TO CART</button>
-        </div>
-    </div>
-    <hr><br><br>
-
-    <div class="card text-white bg-light mb-4" style="max-width: 20rem;">
-        <div class="card-header">Strawberry</div>
-        <div class="card-body">
-            <img src="https://hips.hearstapps.com/clv.h-cdn.co/assets/15/22/1432664914-strawberry-facts1.jpg" alt="strawberry"
-                width="100%">
-            <p class="card-text">@200</p>
-            <button class="btn btn-primary btn-sm">ADD TO CART</button>
-        </div>
-    </div>
-    <hr><br><br>
-
-    <div class="card text-white bg-light mb-4" style="max-width: 20rem;">
-        <div class="card-header">bBroccoli</div>
-        <div class="card-body">
+    <div class=" bg-light">
+        <div class="">Broccoli</div>
+        <div class="">
             <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/full-frame-shot-of-broccoli-royalty-free-image-571248799-1532377854.jpg?crop=1.00xw:0.669xh;0,0.0641xh&resize=640:*"
-                alt="broccoli" width="100%">
-            <p class="card-text">@200</p>
-            <button class="btn btn-primary btn-sm">ADD TO CART</button>
+                alt="broccoli" width="350px">
+            <select name="Quantity" id="Quantity">
+                <option value="1">1 kg</option>
+                <option value="2">2 kg</option>
+                <option value="3">3 kg</option>
+                <option value="4">4 kg</option>
+                <option value="5">5 kg</option>
+                <option value="6">6 kg</option>
+                <option value="7">7 kg</option>
+                <option value="8">8 kg</option>
+                <option value="9">9 kg</option>
+                <option value="10">10 kg</option>
+            </select>
+            <p class="">@200/kg</p>
+            <button class="btn btn-primary btn-sm cart">ADD TO CART</button>
         </div>
     </div>
     <hr><br><br>
+
+    <h2 class="text-center">Fruits</h2>
+    <div class=" bg-light">
+        <div class="">Oranges</div>
+        <div class="">
+            <img src="https://cdn.britannica.com/24/174524-050-A851D3F2/Oranges.jpg" alt="Oranges" width="350px">
+            <select name="Quantity" id="Quantity">
+                <option value="1">1 kg</option>
+                <option value="2">2 kg</option>
+                <option value="3">3 kg</option>
+                <option value="4">4 kg</option>
+                <option value="5">5 kg</option>
+                <option value="6">6 kg</option>
+                <option value="7">7 kg</option>
+                <option value="8">8 kg</option>
+                <option value="9">9 kg</option>
+                <option value="10">10 kg</option>
+            </select>
+            <p class="">@250/kg</p>
+            <button class="btn btn-primary btn-sm cart">ADD TO CART</button>
+        </div>
+    </div>
+    <hr><br><br>
+
+    <div class=" bg-light" style="max-width :100%">
+        <div class="">Mangoes</div>
+        <div class="">
+            <img src="https://gigi-gelato.com/wp-content/uploads/2020/05/mango-is-gezond.jpg" alt="Mangoes"
+                width="350px">
+            <select name="Quantity" id="Quantity">
+                <option value="1">1 kg</option>
+                <option value="2">2 kg</option>
+                <option value="3">3 kg</option>
+                <option value="4">4 kg</option>
+                <option value="5">5 kg</option>
+                <option value="6">6 kg</option>
+                <option value="7">7 kg</option>
+                <option value="8">8 kg</option>
+                <option value="9">9 kg</option>
+                <option value="10">10 kg</option>
+            </select>
+            <p class="">@400/kg</p>
+            <button class="btn btn-primary btn-sm cart">ADD TO CART</button>
+        </div>
+    </div>
+    <hr><br><br>
+
+
+    <div class=" bg-light">
+        <div class="">Banana</div>
+        <div class="">
+            <img src="https://images.everydayhealth.com/images/diet-nutrition/all-about-bananas-nutrition-facts-health-benefits-recipes-and-more-rm-722x406.jpg"
+                alt="Banana" width="350px">
+            <select name="Quantity" id="Quantity">
+                <option value="1">1 kg</option>
+                <option value="2">2 kg</option>
+                <option value="3">3 kg</option>
+                <option value="4">4 kg</option>
+                <option value="5">5 kg</option>
+                <option value="6">6 kg</option>
+                <option value="7">7 kg</option>
+                <option value="8">8 kg</option>
+                <option value="9">9 kg</option>
+                <option value="10">10 kg</option>
+            </select>
+            <p class="">@150/kg</p>
+            <button class="btn btn-primary btn-sm cart">ADD TO CART</button>
+        </div>
+    </div>
+    <hr><br><br>
+
+
+    <div class=" bg-light">
+        <div class="">Carrots</div>
+        <div class="">
+            <img src="https://www.firstforwomen.com/wp-content/uploads/sites/2/2021/06/Whole-carrots.jpg" alt="Carrots"
+                width="350px">
+            <select name="Quantity" id="Quantity">
+                <option value="1">1 kg</option>
+                <option value="2">2 kg</option>
+                <option value="3">3 kg</option>
+                <option value="4">4 kg</option>
+                <option value="5">5 kg</option>
+                <option value="6">6 kg</option>
+                <option value="7">7 kg</option>
+                <option value="8">8 kg</option>
+                <option value="9">9 kg</option>
+                <option value="10">10 kg</option>
+            </select>
+            <p class="">@200/kg</p>
+            <button class="btn btn-primary btn-sm cart">ADD TO CART</button>
+        </div>
+    </div>
+    <hr><br><br>
+
+
+    <div class=" bg-light">
+        <div class="">Strawberry</div>
+        <div class="">
+            <img src="https://hips.hearstapps.com/clv.h-cdn.co/assets/15/22/1432664914-strawberry-facts1.jpg"
+                alt="strawberry" width="350px">
+            <select name="Quantity" id="Quantity">
+                <option value="1">1 kg</option>
+                <option value="2">2 kg</option>
+                <option value="3">3 kg</option>
+                <option value="4">4 kg</option>
+                <option value="5">5 kg</option>
+                <option value="6">6 kg</option>
+                <option value="7">7 kg</option>
+                <option value="8">8 kg</option>
+                <option value="9">9 kg</option>
+                <option value="10">10 kg</option>
+            </select>
+            <p class="">@400/kg</p>
+            <button class="btn btn-primary btn-sm cart">ADD TO CART</button>
+        </div>
+    </div>
+    <hr><br><br>
+
+
+    <div class=" bg-light">
+        <div class="">Ovacado</div>
+        <div class="">
+            <img src="https://i.insider.com/60b93af389dbc300189b291f?width=700" alt="Ovacado" width="350px">
+            <select name="Quantity" id="Quantity">
+                <option value="1">1 kg</option>
+                <option value="2">2 kg</option>
+                <option value="3">3 kg</option>
+                <option value="4">4 kg</option>
+                <option value="5">5 kg</option>
+                <option value="6">6 kg</option>
+                <option value="7">7 kg</option>
+                <option value="8">8 kg</option>
+                <option value="9">9 kg</option>
+                <option value="10">10 kg</option>
+            </select>
+            <p class="">@200/kg</p>
+            <button class="btn btn-primary btn-sm cart">ADD TO CART</button>
+        </div>
+    </div>
+    <hr><br><br>
+
+    <h2 class="text-center">Cereals</h2>
+    <div class=" bg-light">
+        <div class="">Peanuts</div>
+        <div class="">
+            <img src="http://upl.stack.com/wp-content/uploads/2020/01/14122708/Peanuts-4-STACK-654x368.jpg"
+                alt="Peanuts" width="350px">
+            <select name="Quantity" id="Quantity">
+                <option value="1">1 kg</option>
+                <option value="2">2 kg</option>
+                <option value="3">3 kg</option>
+                <option value="4">4 kg</option>
+                <option value="5">5 kg</option>
+                <option value="6">6 kg</option>
+                <option value="7">7 kg</option>
+                <option value="8">8 kg</option>
+                <option value="9">9 kg</option>
+                <option value="10">10 kg</option>
+            </select>
+            <p class="">@300/kg</p>
+            <button class="btn btn-primary btn-sm cart">ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class=" bg-light">
+        <div class="">Beans</div>
+        <div class="">
+            <img src="https://inhabitat.com/wp-content/blogs.dir/1/files/2020/04/How-to-cook-dry-beans-889x592.jpg"
+                alt="Beans" width="350px">
+            <select name="Quantity" id="Quantity">
+                <option value="1">1 kg</option>
+                <option value="2">2 kg</option>
+                <option value="3">3 kg</option>
+                <option value="4">4 kg</option>
+                <option value="5">5 kg</option>
+                <option value="6">6 kg</option>
+                <option value="7">7 kg</option>
+                <option value="8">8 kg</option>
+                <option value="9">9 kg</option>
+                <option value="10">10 kg</option>
+            </select>
+            <p class="">@200/kg</p>
+            <button class="btn btn-primary btn-sm cart">ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class=" bg-light">
+        <div class="">Eggs</div>
+        <div class="">
+            <img src="https://www.nationalswa.com/wp-content/uploads/2019/08/Eggs-e1567737068980-799x533.jpg" alt="Eggs"
+                width="350px">
+            <select name="Quantity" id="Quantity">
+                <option value="1">1 kg</option>
+                <option value="2">2 kg</option>
+                <option value="3">3 kg</option>
+                <option value="4">4 kg</option>
+                <option value="5">5 kg</option>
+                <option value="6">6 kg</option>
+                <option value="7">7 kg</option>
+                <option value="8">8 kg</option>
+                <option value="9">9 kg</option>
+                <option value="10">10 kg</option>
+            </select>
+            <p class="">@300/kg</p>
+            <button class="btn btn-primary btn-sm cart">ADD TO CART</button>
+        </div>
+    </div>
+    <hr><br><br>
+
+
+    <div class=" bg-light">
+        <div class="">Sweet potatoes</div>
+        <div class="">
+            <img src="https://www.almanac.com/sites/default/files/image_nodes/sweet-potatoes_ssbonnietaylorbarry.jpg"
+                alt="Sweet potatoes" width="350px">
+            <select name="Quantity" id="Quantity">
+                <option value="1">1 kg</option>
+                <option value="2">2 kg</option>
+                <option value="3">3 kg</option>
+                <option value="4">4 kg</option>
+                <option value="5">5 kg</option>
+                <option value="6">6 kg</option>
+                <option value="7">7 kg</option>
+                <option value="8">8 kg</option>
+                <option value="9">9 kg</option>
+                <option value="10">10 kg</option>
+            </select>
+            <p class="">@200/kg</p>
+            <button class="btn btn-primary btn-sm cart">ADD TO CART</button>
+        </div>
+    </div>
+    <hr><br><br>
+
 </div>
 {% endblock %}
-
