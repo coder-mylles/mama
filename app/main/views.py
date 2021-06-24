@@ -9,3 +9,7 @@ def index():
 @main.route('/checkout')
 def checkout():
     return render_template('checkout.html')
+
+@main.route('/addcart')
+def cart():
+    return render_template('cart.html')

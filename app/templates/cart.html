@@ -1,0 +1,120 @@
+ {% include 'navbar.html' %}
+  {% include 'footer.html' %}
+{%include 'bootstrap/base.html'%}
+ <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='main.css') }}">
+
+{% block content %}
+ <main class="main-container">
+
+     <section class="section">
+         <h2 class="section-title">Products</h2>
+         <div class="products">
+             <div class="product">
+                 <img class="product-image"
+                     src="https://www.fmk.co.ke/wp-content/uploads/2019/08/Kale-Farmers-Market-Kenya.jpg" alt="Kales" />
+                 <h2 class="product-name">Kales</h2>
+                 <h3 class="product-price">100</h3>
+                 <button class="btn btn-primary" data-action="add-to-cart">
+                     Add To Cart
+                 </button>
+             </div>
+             <div class="product">
+                 <img class="product-image"
+                     src="https://www.respectfood.com/wp-content/uploads/sites/2/2020/02/Spinach1.png" alt="Soinach" />
+                 <h2 class="product-name">Spinach</h2>
+                 <h3 class="product-price">5</h3>
+                 <button class="btn btn-primary" data-action="add-to-cart">
+                     Add To Cart
+                 </button>
+             </div>
+             <div class="product">
+                 <img class="product-image"
+                     src="https://sokoshipafrica.com/wp-content/uploads/2020/11/coriander-hybrid-grade-a.jpg"
+                     alt="Dania" />
+                 <h2 class="product-name">Dania</h2>
+                 <h3 class="product-price">5</h3>
+                 <button class="btn btn-primary" data-action="add-to-cart">
+                     Add To Cart
+                 </button>
+             </div>
+             <div class="product">
+                 <img class="product-image"
+                     src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/full-frame-shot-of-broccoli-royalty-free-image-571248799-1532377854.jpg?crop=1.00xw:0.669xh;0,0.0641xh&resize=640:*"
+                     alt="Broccoli" />
+                 <h2 class="product-name">Broccoli</h2>
+                 <h3 class="product-price">3</h3>
+                 <button class="btn btn-primary" data-action="add-to-cart">
+                     Add To Cart
+                 </button>
+             </div>
+             <div class="product">
+                 <img class="product-image" src="https://cdn.britannica.com/24/174524-050-A851D3F2/Oranges.jpg"
+                     alt="Oranges" />
+                 <h2 class="product-name">Oranges</h2>
+                 <h3 class="product-price">200</h3>
+                 <button class="btn btn-primary" data-action="add-to-cart">
+                     Add To Cart
+                 </button>
+             </div>
+             <div class="product">
+                 <img class="product-image" src="https://gigi-gelato.com/wp-content/uploads/2020/05/mango-is-gezond.jpg"
+                     alt="Mangoes" />
+                 <h2 class="product-name">Mangoes</h2>
+                 <h3 class="product-price">40</h3>
+                 <button class="btn btn-primary" data-action="add-to-cart">
+                     Add To Cart
+                 </button>
+             </div>
+             <div class="product">
+                 <img class="product-image"
+                     src="https://images.everydayhealth.com/images/diet-nutrition/all-about-bananas-nutrition-facts-health-benefits-recipes-and-more-rm-722x406.jpg"
+                     alt="Banana" />
+                 <h2 class="product-name">Banana</h2>
+                 <h3 class="product-price">5</h3>
+                 <button class="btn btn-primary" data-action="add-to-cart">
+                     Add To Cart
+                 </button>
+             </div>
+             <div class="product">
+                 <img class="product-image"
+                     src="https://hips.hearstapps.com/clv.h-cdn.co/assets/15/22/1432664914-strawberry-facts1.jpg"
+                     alt="Strawberry" />
+                 <h2 class="product-name">Strawberry</h2>
+                 <h3 class="product-price">200</h3>
+                 <button class="btn btn-primary" data-action="add-to-cart">
+                     Add To Cart
+                 </button>
+             </div>
+             <div class="product">
+                 <img class="product-image"
+                     src="https://www.firstforwomen.com/wp-content/uploads/sites/2/2021/06/Whole-carrots.jpg"
+                     alt="carrots" />
+                 <h2 class="product-name">Carrots</h2>
+                 <h3 class="product-price">250</h3>
+                 <button class="btn btn-primary" data-action="add-to-cart">
+                     Add To Cart
+                 </button>
+             </div>
+         </div>
+     </section>
+     <section class="section">
+         <h2 class="section-title">Cart</h2>
+         <div class="cart">
+
+         </div>
+         <div class="cart-footer">
+             <h2 class="cart-footer-total" data-action="total-price">1</h2>
+             <button class="btn btn-primary btn-small btn-danger" data-action="clear-cart">Clear Cart</button>
+             <button class="btn btn-primary btn-small btn-danger" data-action="checkout">Checkout</button>
+         </div>
+     </section>
+     <div id="information">
+         <p>Your order will be processed and delivered within one hour of placing.</p>
+         <p>Make sure you have the total amout for the order during order delivery delivery.</p>
+         <p>Incase of any comment of complaint, Please reach out to us as fast as possible.</p>
+         <p id="regards">Regards, Management</p>
+     </div>
+ </main>
+ <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+ {% endblock%}

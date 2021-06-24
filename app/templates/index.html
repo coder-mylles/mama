@@ -1,11 +1,6 @@
-<<<<<<< HEAD
-{% extends 'navbar.html' %}
-{% block content %}
-<h1>Mama Mboga app</h1>
-{% endblock %}
-=======
 {%include 'bootstrap/base.html'%}
 {% include 'navbar.html' %}
+ {% include 'footer.html' %}
 
 <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
 
@@ -88,7 +83,7 @@
             <button class="btn btn-primary btn-sm cart">ADD TO CART</button>
         </div>
     </div>
-    <hr><br><br>
+    <hr><br><br><br>
 
     <div class=" bg-light">
         <div class="">Broccoli</div>
@@ -112,6 +107,9 @@
         </div>
     </div>
     <hr><br><br>
+    </div>
+    <div class="container kales">
+
 
     <h2 class="text-center">Fruits</h2>
     <div class=" bg-light">
@@ -348,4 +346,3 @@
 
 </div>
 {% endblock %}
->>>>>>> d16aa04304d9495b24154fb270483edcee9d9a79
