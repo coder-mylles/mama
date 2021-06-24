@@ -19,8 +19,14 @@
     font-size: 19px;
 }
 
-.title{
+.title {
     text-transform: uppercase;
-    font-weight:700;
+    font-weight: 700;
     font-size: 30px;
+}
+
+.background {
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-farm-fresh-vegetable-market-advertising-poster-background-material-image_165354.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }

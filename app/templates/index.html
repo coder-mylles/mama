@@ -1,13 +1,16 @@
 {%include 'bootstrap/base.html'%}
 {% include 'navbar.html' %}
 
-{% block styles %}
-<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
-{% endblock %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+
+
 <h2 class="text-center title">Wecome</h2>
 {% block content %}
 
 <div class="container land">
+    <div class="background">
+
+    </div>
    
     <div class="card text-white bg-light mb-4" style="max-width: 20rem;">
         <div class="card-header">Kales</div>
