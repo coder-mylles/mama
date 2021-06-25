@@ -104,8 +104,8 @@
          </div>
          <div class="cart-footer">
              <h2 class="cart-footer-total" data-action="total-price">1</h2>
-             <button class="btn btn-primary btn-small btn-danger" data-action="clear-cart">Clear Cart</button>
-             <button class="btn btn-primary btn-small btn-danger" data-action="checkout">Checkout</button>
+             <button class="btn btn-primary btn-small btn-danger"><a href="{{url_for('main.index')}}">Go Back to homepage</a></button>
+             <!-- <button class="btn btn-primary btn-small btn-danger" data-action="checkout" id="checkout">Checkout</button> -->
          </div>
      </section>
      <div id="information">
@@ -116,5 +116,7 @@
      </div>
  </main>
  <script src="{{ url_for('static', filename='script.js') }}"></script>
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+     integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 
  {% endblock%}

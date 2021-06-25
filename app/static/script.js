@@ -184,12 +184,12 @@ function countCartTotal() {
     '[data-action="total-price"]'
   ).innerText = `${cartTotal.toFixed(2)}`;
 }
-function checkout() {
+$("#checkout").click(function(){
   alert("Thank you for shopping with us, Welcome again");
   cart = [];
   localStorage.removeItem("cart");
   location.reload();
-}
+})
 
 function saveCart() {
   localStorage.setItem("cart", JSON.stringify(cart));

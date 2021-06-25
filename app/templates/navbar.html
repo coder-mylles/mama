@@ -13,14 +13,18 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="btn btn-navbar btn-lg"id="buton"><a href="{{url_for('main.index')}}">Welcome</a> </li>
-                    <li class="btn btn-navbar btn-lg" id="buton"><a href="{{url_for('auth.login')}}">Sign in</a> </li>
-                    <li class="btn btn-navbar btn-lg" id="buton"><a href="{{url_for('auth.register')}}">Sign Up</a>
-                    </li>
+                   
+                    <!-- <li class="btn btn-navbar btn-lg" id="buton"><a href="{{url_for('auth.register')}}">Sign Up</a>
+                    </li> -->
+                     {% if current_user.is_authenticated %}
+                      <li class="user btn btn-navbar btn-lg"><a href="{{url_for('auth.logout')}}">Sign out</a></li>
                    <li class="btn btn-navbar btn-lg" id="buton"><a href="{{url_for('main.cart')}}"><img
                                src="https://thumbs.dreamstime.com/z/shopping-cart-icon-vector-logo-137282150.jpg"
                                alt="Image" width="20px">Cart</a>
                    </li>
-
+                   {% else %}
+                   <li class="user btn btn-navbar btn-lg"><a href="{{url_for('auth.login')}}">Sign in</a></li>
+                     {%endif%}
 
                 </ul>
 

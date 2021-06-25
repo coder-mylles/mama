@@ -1,0 +1,69 @@
+.logo {
+    height: 50px;
+    width: auto;
+    position: relative;
+}
+
+.carousel-item {
+    height: 100vh;
+    max-height: 823px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+    color: ivory;
+}
+
+.container {
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    font-family: "abel", serif;
+}
+
+h6 {
+    color: royalblue;
+    font-weight: 700;
+}
+
+h5 {
+    color: red;
+    font-weight: 800;
+}
+
+h4 {
+    font-family: monospace;
+    font-weight: 900;
+}
+
+.checkbox {
+    text-align: left;
+}
+
+.p13 {
+    font-size: 13px
+}
+
+.p24 {
+    font-size: 24px;
+    color: white;
+}
+
+.p20 {
+    font-size: 20px-
+}
+
+.jumbotron {
+    text-align: center;
+}
+
+/*******************DELIVERY***************************/
+/******************************************************/
+#address {
+    display: none;
+}
