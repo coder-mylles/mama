@@ -1,4 +1,7 @@
-export SECRET_KEY='123456'
-export MAIL_USERNAME='cheruden25@gmail.com'
-export MAIL_PASSWORD='0723056032Aa'
-python3.8 manage.py server
+export MAIL_USERNAME='matonyando@gmail.com'
+export MAIL_PASSWORD='5134.Nyando'
+export SECRET_KEY='mylles'
+export DATABASE_URL ='postgresql://martin:5134.Nyando@localhost/mama'
+
+
+python3 manage.py server
